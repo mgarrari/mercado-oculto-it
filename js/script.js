@@ -1,7 +1,7 @@
 let data = [];
 
 async function loadData() {
-  const res = await fetch("data.json");
+  const res = await fetch("data/data.json");
   data = await res.json();
   renderTable(data);
   document.getElementById("lastUpdated").textContent = new Date().toLocaleDateString("es-ES");
