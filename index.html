@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mercado Oculto IT - Miguel Garrido</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Mercado Oculto IT</h1>
+    <p class="subtitle">Busqueda ejecutiva para Miguel Garrido (ServiceNow, IT Governance, Digital Transformation)</p>
+  </header>
+
+  <main>
+    <section class="filters">
+      <label>
+        Filtrar por empresa:
+        <input type="text" id="searchInput" placeholder="Escribe para filtrar..." />
+      </label>
+      <label>
+        Ordenar por:
+        <select id="sortSelect">
+          <option value="puerta_real_desc">Puerta real (mayor a menor)</option>
+          <option value="puerta_real_asc">Puerta real (menor a mayor)</option>
+          <option value="puesto_oculto_desc">Puesto oculto (mayor a menor)</option>
+          <option value="puesto_oculto_asc">Puesto oculto (menor a mayor)</option>
+          <option value="empresa_asc">Empresa (A-Z)</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="table-container">
+      <table id="companiesTable">
+        <thead>
+          <tr>
+            <th>Empresa</th>
+            <th>Banda salarial</th>
+            <th>Area objetivo</th>
+            <th>Responsable objetivo</th>
+            <th>Puerta real</th>
+            <th>Prob. conversacion</th>
+            <th>Puesto oculto</th>
+            <th>Prob. exista sin publicar</th>
+            <th>Ultima senal</th>
+            <th>Proxima accion</th>
+            <th>Objetivo accion</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Actualizado: <span id="lastUpdated"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
